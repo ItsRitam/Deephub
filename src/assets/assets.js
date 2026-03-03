@@ -24,20 +24,27 @@ import twitter_icon from './twitter_icon.svg'
 import instagram_icon from './instagram_icon.svg'
 import linkedin_icon from './linkedin_icon.svg'
 import logo_dark from './logo_dark.svg'
-import airbnb_logo from './airbnb_logo.svg'
-import google_logo from './google_logo.svg'
 import menu_icon_dark from './menu_icon_dark.svg'
 import sun_icon from './sun_icon.svg'
 import moon_icon from './moon_icon.svg'
+import kaggle_logo from './kaggle_logo.svg'
+import thisperson_logo from './thisperson_logo.svg'
+import gemini_logo from './gemini_logo.svg'
+import colab_logo from './colab_logo.svg'
+import tensorflow_logo from './tensorflow_logo.svg'
+import mern_logo from './mern_logo.svg'
+import ritam from './ritam.png'
+import sayan from './sayan.png'
+import useless from './useless.png'
 
 
 export const company_logos = [
-  microsoft_logo,
-  zoom_logo,
-  rakuten_logo,
-  coinbase_logo,
-  airbnb_logo,
-  google_logo,
+  colab_logo,
+  kaggle_logo,
+  gemini_logo,
+  thisperson_logo,
+  tensorflow_logo,
+  mern_logo,
 ]
 
 const assets = {
@@ -71,12 +78,12 @@ const assets = {
 export default assets
 
 export const teamData = [
-  { name: 'Haley Carter', title: 'CEO & founder', image: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200' },
-  { name: 'James Walker', title: 'Ads manager', image: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200' },
-  { name: 'Jessica Morgan', title: 'Vice president', image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&h=200&auto=format&fit=crop' },
-  { name: 'Ashley Bennett', title: 'Marketing & sales', image: 'https://randomuser.me/api/portraits/women/10.jpg' },
-  { name: 'Emily Parker', title: 'Content marketer', image: 'https://randomuser.me/api/portraits/women/11.jpg' },
-  { name: 'Ryan Mitchell', title: 'Content writer', image: 'https://randomuser.me/api/portraits/men/9.jpg' },
-  { name: 'Megan Brooks', title: 'Performance manager', image: 'https://randomuser.me/api/portraits/women/12.jpg' },
-  { name: 'Amber Foster', title: 'Senior writer', image: 'https://randomuser.me/api/portraits/women/14.jpg' },
+  { name: 'Ritam Chakraborty', title: 'Full Stack Developer & System Integration Lead', image: ritam },
+  { name: 'Sayan Bhattacharjee', title: 'Machine Learning Engineer', image: sayan },
+  { name: 'Abhisekh Kumar Paswan', title: 'Useless Teammate', image: useless },
+  { name: 'Debprasad Mallik', title: 'Useless Teammate', image: useless },
+  // { name: 'Emily Parker', title: 'Content marketer', image: 'https://randomuser.me/api/portraits/women/11.jpg' },
+  // { name: 'Ryan Mitchell', title: 'Content writer', image: 'https://randomuser.me/api/portraits/men/9.jpg' },
+  // { name: 'Megan Brooks', title: 'Performance manager', image: 'https://randomuser.me/api/portraits/women/12.jpg' },
+  // { name: 'Amber Foster', title: 'Senior writer', image: 'https://randomuser.me/api/portraits/women/14.jpg' },
 ]

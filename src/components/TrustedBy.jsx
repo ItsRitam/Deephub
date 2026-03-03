@@ -16,7 +16,7 @@ const TrustedBy = () => {
       whileInView={{opacity: 1, y: 0}}
       transition={{duration: 0.6}}
       viewport={{once: true}} 
-       className='font-semibold'>Trusted bu Leading Companies</motion.h3>
+       className='font-semibold'>Built Using Industry-Standard Technologies & Enterprise Datasets</motion.h3>
 
       <motion.div
       initial="hidden"

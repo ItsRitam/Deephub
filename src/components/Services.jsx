@@ -8,26 +8,26 @@ const Services = () => {
   //array:-
   const servicesData = [
     {
-      tittle: "Advertising",
+      tittle: "Deepfake Detection",
       description:
-        "We trust bold ideas into powerful digital solutions that connect, engage...",
+        "Detect manipulated faces, altered videos with advanced analysis",
       icon: assets.ads_icon,
     },
     {
-      tittle: "Content marketing",
-      description: "We help you execute your plan and deliver results.",
+      tittle: "Media Verification",
+      description: "Check whether uploaded images and videos are real, modified, or artificially created.",
       icon: assets.marketing_icon,
     },
     {
-      tittle: "Content writing",
+      tittle: "Content Analysis",
       description:
-        "We help you create a marketing strategy that derives results.",
+        "We Examine visual patterns and inconsistencies to identify fake media.",
       icon: assets.content_icon,
     },
     {
-      tittle: "Social media",
+      tittle: "Social media Authenticity",
       description:
-        "We help you build a strong social media presence and engage with your audience.",
+        "Prevent the spread of misleading content by verifying media from us before sharing.",
       icon: assets.social_icon,
     },
   ];
@@ -49,7 +49,7 @@ const Services = () => {
 
       <Tittle
         tittle="How can we help?"
-        desc="Form strategy to execution, we craft digital solution that move your business forward."
+        desc="We examine pixel patterns, facial inconsistencies, and metadata anomalies to identify tampering."
       />
 
       <div className="flex flex-col md:grid grid-cols-2">

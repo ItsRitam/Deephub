@@ -1,8 +1,38 @@
 import React from "react";
 import assets from "../assets/assets";
 import { motion } from "framer-motion";
+import UploadZone from "./UploadZone";
+import { useState } from "react";
+import ResultCard from "./ResultCard";
 
 const Hero = () => {
+  const handleFile = (file) => {
+  console.log("Uploaded:", file);
+
+  // Fake AI result (replace later with real API)
+  setTimeout(() => {
+    setResult({
+      status: Math.random() > 0.5 ? "real" : "fake",
+      confidence: Math.floor(Math.random() * 30) + 70,
+    });
+  }, 1500);
+};
+
+const [result, setResult] = useState(null);
+
+
+const content = result ? (
+  <ResultCard
+    result={result}
+    onReset={() => setResult(null)}
+  />
+) : (
+  <UploadZone onFile={handleFile} />
+);
+
+
+
+
   return (
     <div
       id="hero"
@@ -16,7 +46,7 @@ const Hero = () => {
         className="inline-flex items-center gap-2 border border-gray-300 p-1.5 pr-4 rounded-full"
       >
         <img className="w-20" src={assets.group_profile} alt="" />
-        <p className="text-xs font-medium">Trusted by 10k people</p>
+        <p className="text-xs font-medium">Trained with 10k+ photos</p>
       </motion.div>
 
       <motion.h1
@@ -26,11 +56,11 @@ const Hero = () => {
         viewport={{ once: true }}
         className="text-4xl sm:text-5xl md:text-6xl xl:text-[84px] font-medium xl:leading-[95px] max-w-5xl "
       >
-        Turning imagination into{" "}
+        Unmasking Deepfakes{" "}
         <span className="bg-gradient-to-r from-[#5044E5] to-[#4d8cea] bg-clip-text text-transparent ">
-          digital{" "}
+          Restoring{" "}
         </span>
-        impact.
+        digital trust
       </motion.h1>
 
       <motion.p
@@ -49,9 +79,11 @@ const Hero = () => {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 2 }}
         viewport={{ once: true }}
-        className="relative"
+        className="relative w-full max-w-6xl mx-auto"
       >
-        <img src={assets.hero_img} alt="" className="w-full max-w-6xl" />
+
+        {content}
+
         <img
           src={assets.bgImage1}
           alt=""

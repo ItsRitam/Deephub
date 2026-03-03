@@ -7,20 +7,20 @@ const OurWork = () => {
   const workData = [
     //Array is here
     {
-      tittle: "Moble app marketing",
+      tittle: "High Detection Efficiency",
       description:
-        "We turn bold ideas into powerful digital solutions that connect, engage...",
+        "Achieved high accuracy and fast processing time, ensuring reliable results without delays.",
       image: assets.work_mobile_app,
     },
     {
-      tittle: "Dashboard management",
-      description: "We help you execute your plan and deliver results.",
+      tittle: "FFT-Based Image Analysis",
+      description: "Our model now uses FFT for frequency domain analysis to identify unnatural patterns in images.",
       image: assets.work_dashboard_management,
     },
     {
-      tittle: "Fitness app promotion",
+      tittle: "Cross-Device Compatibility",
       description:
-        "We help you to create a marketing strategy that drives results",
+        "Designed to work seamlessly across smartphones, tablets, and desktops for maximum accessibility.",
       image: assets.work_fitness_app,
     },
   ];
@@ -35,8 +35,8 @@ const OurWork = () => {
       className="flex flex-col items-center gap-7 pt-30 px-4 sm:px-12 lg:px-24 xl:px-40 text-gray-700 dark:text-white"
     >
       <Tittle
-        tittle="Our latest work"
-        desc="From strategy to execution, we craft digital solutions that move your business forward."
+        tittle="Our latest achievements"
+        desc="Showcasing the performance, accuracy, and technological progress of our deepfake detection system."
       />
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-5xl">

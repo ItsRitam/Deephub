@@ -31,7 +31,7 @@ const Footer = ({ theme }) => {
           />
 
           <p className="max-w-md mx-auto lg:mx-0 text-center lg:text-left">
-            From strategy to execution, we craft digital solutions that move your business forward.
+            Redefining digital trust with intelligent deepfake detection technology.
           </p>
 
           <ul className="flex flex-wrap justify-center lg:justify-start gap-4">
