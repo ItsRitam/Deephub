@@ -79,9 +79,9 @@ export default assets
 
 export const teamData = [
   { name: 'Ritam Chakraborty', title: 'Full Stack Developer & System Integration Lead', image: ritam },
-  { name: 'Sayan Bhattacharjee', title: 'Machine Learning Engineer', image: sayan },
-  { name: 'Abhisekh Kumar Paswan', title: 'Useless Teammate', image: useless },
-  { name: 'Debprasad Mallik', title: 'Useless Teammate', image: useless },
+  { name: 'Sayan Bhattacharjee', title: 'AI/ML & Backend Developer', image: sayan },
+  { name: 'Abhisekh Kumar Paswan', title: ' ', image: useless },
+  { name: 'Debprasad Mallik', title: '', image: useless },
   // { name: 'Emily Parker', title: 'Content marketer', image: 'https://randomuser.me/api/portraits/women/11.jpg' },
   // { name: 'Ryan Mitchell', title: 'Content writer', image: 'https://randomuser.me/api/portraits/men/9.jpg' },
   // { name: 'Megan Brooks', title: 'Performance manager', image: 'https://randomuser.me/api/portraits/women/12.jpg' },

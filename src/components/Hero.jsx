@@ -46,7 +46,7 @@ const content = result ? (
         className="inline-flex items-center gap-2 border border-gray-300 p-1.5 pr-4 rounded-full"
       >
         <img className="w-20" src={assets.group_profile} alt="" />
-        <p className="text-xs font-medium">Trained with 10k+ photos</p>
+        <p className="text-xs font-medium">Trained with 150k+ photos</p>
       </motion.div>
 
       <motion.h1
