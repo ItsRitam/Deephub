@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Image as ImageIcon, Video, ArrowLeft, Loader2 } from "lucide-react";
-import ResultCard from "./ResultCard"; 
+import ResultCard from "./ResultCard";
 
 const ScanPage = () => {
   const [loading, setLoading] = useState(false);
@@ -10,9 +10,10 @@ const ScanPage = () => {
   const [error, setError] = useState(null);
   const [fileName, setFileName] = useState("");
   const [mode, setMode] = useState("");
-  
+
   const navigate = useNavigate();
-  const API_URL = "http://localhost:8000";
+  const API_URL =
+    "https://deephub-api.wonderfulplant-dffbac5d.centralindia.azurecontainerapps.io";
 
   const handleUpload = async (file, type) => {
     if (!file) return;
@@ -39,7 +40,7 @@ const ScanPage = () => {
       const response = await fetch(`${API_URL}${endpoint}`, {
         method: "POST",
         headers: {
-          Authorization: `Bearer ${token}`, 
+          Authorization: `Bearer ${token}`,
         },
         body: formData,
       });
@@ -54,9 +55,8 @@ const ScanPage = () => {
         status: data.prediction.toLowerCase(),
         confidence: data.confidence,
         fileUrl: data.file_url,
-        type: type 
+        type: type,
       });
-
     } catch (err) {
       setError(err.message);
     } finally {
@@ -66,10 +66,9 @@ const ScanPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-black py-10 px-4 sm:px-12 lg:px-24 xl:px-40 transition-colors duration-300">
-      
       <div className="mb-8">
-        <Link 
-          to="/dashboard" 
+        <Link
+          to="/dashboard"
           className="inline-flex items-center gap-2 text-gray-500 hover:text-[#5044E5] dark:text-gray-400 dark:hover:text-[#6a5fff] transition-colors font-medium text-sm"
         >
           <ArrowLeft size={16} />
@@ -134,21 +133,19 @@ const ScanPage = () => {
             <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">
               Processing {mode}...
             </h2>
-            <p className="text-gray-500 dark:text-gray-400 mt-2">
-              {fileName}
-            </p>
+            <p className="text-gray-500 dark:text-gray-400 mt-2">{fileName}</p>
           </div>
         )}
 
         {!loading && result && (
           <div className="max-w-md mx-auto mt-8">
-             <ResultCard 
-               result={result} 
-               onReset={() => {
-                 setResult(null);
-                 setFileName("");
-               }} 
-             />
+            <ResultCard
+              result={result}
+              onReset={() => {
+                setResult(null);
+                setFileName("");
+              }}
+            />
           </div>
         )}
 
@@ -157,7 +154,6 @@ const ScanPage = () => {
             {error}
           </div>
         )}
-
       </div>
     </div>
   );

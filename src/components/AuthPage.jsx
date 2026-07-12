@@ -14,7 +14,8 @@ const AuthPage = ({ setUser }) => {
     password: "",
   });
 
-  const API_URL = "http://localhost:8000";
+  const API_URL =
+    "https://deephub-api.wonderfulplant-dffbac5d.centralindia.azurecontainerapps.io";
 
   const handleChange = (e) => {
     setFormData({
@@ -54,7 +55,7 @@ const AuthPage = ({ setUser }) => {
 
         // --- UPDATED: Update the App state so the Navbar updates instantly ---
         if (setUser) {
-          setUser(data.user); 
+          setUser(data.user);
         }
 
         navigate("/dashboard");
