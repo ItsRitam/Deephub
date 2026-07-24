@@ -155,10 +155,10 @@ const Navbar = ({ theme, setTheme, user, setUser }) => {
         ) : (
           <Link
             to="/auth" 
-            className="text-sm max-sm:hidden flex items-center gap-2 bg-primary text-white px-6 py-2 rounded-full cursor-pointer hover:scale-103 transition-all"
+            className="text-xs sm:text-sm flex items-center gap-1.5 sm:gap-2 bg-primary text-white px-4 py-1.5 sm:px-6 sm:py-2 rounded-full cursor-pointer hover:scale-103 transition-all"
           >
             Sign up/Log in
-            <img src={assets.arrow_icon} width={14} alt="" />
+            <img src={assets.arrow_icon} className="w-3 sm:w-[14px]" alt="" />
           </Link>
         )}
 
