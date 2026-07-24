@@ -1,16 +1,38 @@
-# React + Vite
+# DeepHub – Deepfake Image and Video Detection System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**DeepHub** is a full-stack deepfake detection platform designed to identify manipulated images and videos using a **CNN-based hybrid deep learning model**.
 
-Currently, two official plugins are available:
+The system combines spatial, temporal, and frequency-domain analysis to detect inconsistencies and manipulation artifacts in digital media. It provides an intuitive web interface where users can upload images or videos and receive detection results along with prediction confidence scores.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Detection Approach
 
-## React Compiler
+* **Spatial Analysis** – Uses CNN-based feature extraction to identify visual and facial inconsistencies in individual frames.
+* **Temporal Analysis** – Uses LSTM/GRU-based analysis to detect inconsistencies across consecutive video frames.
+* **Frequency Analysis** – Combines FFT with CNN-based analysis to identify frequency-domain artifacts introduced during deepfake generation.
+* **Hybrid Classification** – Features obtained from multiple analysis branches are combined to generate the final deepfake prediction.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+**Frontend:** React.js, JavaScript, Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Backend:** Python, REST API
+
+**Machine Learning:** CNN, LSTM/GRU, FFT
+
+---
+
+## Live Deployment
+
+### Frontend
+
+```
+https://deephub-frontend.vercel.app/
+```
+
+### Backend
+
+```
+https://deephub-api.wonderfulplant-dffbac5d.centralindia.azurecontainerapps.io
+```
+
+---
