@@ -14,9 +14,10 @@ The system combines spatial, temporal, and frequency-domain analysis to detect i
 ## Tech Stack
 
 **Frontend:** React.js, JavaScript, Vite
+
 **Backend:** Python, REST API
+
 **Machine Learning:** CNN, LSTM/GRU, FFT
-**Image & Video Processing:** OpenCV
 
 ---
 
