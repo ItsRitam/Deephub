@@ -31,7 +31,9 @@ const tensorflow_logo = 'https://res.cloudinary.com/dm6yphj8y/image/upload/v1783
 const mern_logo = 'https://res.cloudinary.com/dm6yphj8y/image/upload/v1783856449/mern_logo_ma9qn4.svg';
 const ritam = 'https://res.cloudinary.com/dm6yphj8y/image/upload/v1783877072/ritam_xytbri.png';
 const sayan = 'https://res.cloudinary.com/dm6yphj8y/image/upload/v1783877072/sayan_vttavu.png';
-const useless = 'https://res.cloudinary.com/dm6yphj8y/image/upload/v1783855963/useless_hore2n.png';
+const dev = 'https://res.cloudinary.com/dm6yphj8y/image/upload/v1784917048/dev_ctf1ys.jpg';
+const abhishek = 'https://res.cloudinary.com/dm6yphj8y/image/upload/v1784917073/abhishek_yu3a1v.jpg';
+
 
 export const company_logos = [
   colab_logo,
@@ -75,8 +77,8 @@ export default assets
 export const teamData = [
   { name: 'Ritam Chakraborty', title: 'Full Stack Developer & System Integration Lead', image: ritam },
   { name: 'Sayan Bhattacharjee', title: 'AI/ML Lead & Backend Developer', image: sayan },
-  { name: 'Abhisekh Kumar Paswan', title: ' ', image: useless },
-  { name: 'Debprasad Mallik', title: '', image: useless },
+  { name: 'Abhisekh Kumar Paswan', title: 'Documentation', image: abhishek },
+  { name: 'Debprasad Mallik', title: 'Documentation', image: dev },
   // { name: 'Emily Parker', title: 'Content marketer', image: 'https://randomuser.me/api/portraits/women/11.jpg' },
   // { name: 'Ryan Mitchell', title: 'Content writer', image: 'https://randomuser.me/api/portraits/men/9.jpg' },
   // { name: 'Megan Brooks', title: 'Performance manager', image: 'https://randomuser.me/api/portraits/women/12.jpg' },
