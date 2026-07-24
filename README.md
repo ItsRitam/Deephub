@@ -35,5 +35,3 @@ https://deephub-api.wonderfulplant-dffbac5d.centralindia.azurecontainerapps.io
 ```
 
 ---
-
-**Final Year Project:** Deepfake Image and Video Detection Using CNN-Based Hybrid Model
